@@ -1,0 +1,229 @@
+%%%%%%%%%%%%%%%%%
+% This is an example CV created using altacv.cls (v1.1.5, 1 December 2018) written by
+% LianTze Lim (liantze@gmail.com), based on the
+% Cv created by BusinessInsider at http://www.businessinsider.my/a-sample-resume-for-marissa-mayer-2016-7/?r=US&IR=T
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+  \usepackage{textcomp}
+  \usepackage{multicol}
+
+%   \usepackage{pgf-pie-hacked}
+
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+% \usepackage{pgf-pie-hacked}
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+
+
+%% sample.bib contains your publications
+% \addbibresource{sample.bib}
+\begin{document}
+\name{Srikanth Pragallapati}
+\tagline{Creative geek with roots in open source movement \& IIT graduate}
+\photo{2.5cm}{isso_2}
+\personalinfo{
+  \email{srikanthpragallapati@gmail.com \hspace{0.5em}\href{mailto:srikanthpragallapati@gmail.com} {\faExternalLink}}{}
+    \phone{\href{tel:91-9995453630}{91-9995453630}}
+      \printinfo{\faWhatsapp}{\href{http://bit.ly/2RTaaF5}{91 9995453630 \space \space \faExternalLink}}
+  \location{Doha, Qatar}
+  
+  \vspace{0.2cm}
+  
+    \printinfo{\faSkype}{\href{skype:srikanth4372?chat}{srikanth4372 \space \space\faExternalLink}}
+    \printinfo{\faHome}{Andhra Pradesh, India}
+    % \linkedin{\href{http://bit.ly/35n43wH}{Linkedin Profile\space \space \faExternalLink}}
+    % \printinfo{\faBirthdayCake}{Oct 1994} 
+    \printinfo{\faGroup{}}{Single}
+    }
+
+%% Make the header extend all the way to the right, if you want.
+\begin{fullwidth}
+% Updated on \par
+\makecvheader
+
+% \tiny{\today}
+
+\end{fullwidth}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+\AtBeginEnvironment{itemize}{\small}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Experience}
+\cvevent{Associate Managing Consultant}{Gfi Informatique India Pvt Ltd.}{Jul 2018 -- Ongoing}{Doha, Qatar }
+\begin{center}
+\color{accent}
+   \textbf{IBM API Connect} \& \textbf{IBM Datapower/API Gateway}
+\end{center}
+\begin{itemize}
+\item Production level version-based API development and managing the existing APIs for any issue and support.
+\item Production fixes \& working on new enhancements following the agile.
+\item Reporting the analytics of APIs on a monthly basis.
+\item Payment gateway integration (CyberSource \& QPay) \& handling backend business logic.
+\item Reverse Proxy configurations, Redirection mechanisms
+\item Documenting service mapping document with back-end systems.
+\item On-boarding the developed APIs to API Connect developer portal, exposing to business entities.
+\item Installation lower and higher environments of IBM API Connect v5, 2018.4.1 \& v10 version
+\item Responsible for handling Administration, Development, Deployments activities for every release.
+\item Creation of complex swaggers(multiple back-ends) which includes Encryption, decryption, Dynamic routing using all Node.Js OOP concepts.
+\item Hands-on to API testing \& Load testing tools like Postman, SoapUI etc.
+
+\begin{center}
+\color{accent}
+   \textbf{IBM INTEGRATION BUS} (IIB)
+\end{center}
+
+\item Installation \& configuration of IIB (IBM Integration Bus)
+\item Creation of JWT token based REST APIs in IIB using build-in nodes connecting with MYSQL Database.
+\item Creation of Message flows, mapping the fields, Customizing the response, Exception handling across the flow.
+\item Hands-on working knowledge on JAVA, ESQL languages for transformation operations.
+\item Hands-on level-1 knowledge on MQ commands for basic administration
+
+\end{itemize}
+
+\divider
+
+\cvevent{Senior Software Engineer}{SoftPath Technologies}{Sep 2016 -- Jul 2018}{Hyderabad, India}
+\begin{itemize}
+
+\item Creation, Managing, Running, Securing of APIs using IBM API Connect.
+\item Appending of Oath 2.0, client ID to the exposed API as an authentication mechanism
+\item LDAP configuration for the published APIs via API Connect Dev portal.
+\item Monitoring of created APIs analytics in API Cloud component.
+% \item  Implement an API as a Node.js Loopback application
+\item  Hashing, Encryption and decryption of response
+\item  API Developer portal customization using themes by adding styles sheets.
+
+% \vspace{0.2cm}------
+
+\item  Created troubleshooting and Monitoring via logging Mechanisms in DataPower XI52
+\item  Configured a multi-protocol gateway services to provide HTTP, HTTPS for required services.
+\item  Configuring web service proxy service to provide HTTP, HTTPS for required services.Transformation of the message body using XPATH, XSLT.
+\item  Configuring log Targets, Certificates, Keys, AAA integration, Digital signature etc.
+\end{itemize}
+
+% \addnextpagesidebar[page2sidebar]{}
+\addsidebar{page2sidebar}
+
+\divider
+
+\cvevent{Software Engineer}{Taxfriday}{Jan 2013 -- Aug 2016}{Remote}
+
+\begin{itemize}
+    \item Development of customized reports \& user interface to share with customer
+    \item Payment gateway integration following catalog, quota, Order payment flows
+    \item Requirement gathering for all kinds of enhancement with in the module
+    \item Writing business logic in Spring BO to do all tax calculating algorithm.
+    \item Creation of model to database hibernate configuration files. 
+    \item Designing reports and user interface as per requirement. 
+    \item Build generation, Deployment with in various environments. 
+    \item Fixing issues following agile methodology 
+    \item Extended support on critical times.
+    \item Troubleshooting the integration issues with payment gateways with in different operation system with service provider.
+    \item Code optimization, Code cleaning \& fixing VAPT security vulnerabilities. 
+    \item Unit testing \& Automation testing using selenium.
+\end{itemize}
+
+\vspace{0.2cm}
+\textbf{Technologies --} Java, Spring, Hibernate, SQL, Selenium, JSP.
+
+\divider
+
+\cvevent{Project Intern}{Indian Space Research Organisation}{Jan 2016 -- Apr 2016}{Bangalore, India}
+
+Worked on developing a Network security tool by Analysing UTM Logs as a mandatory Final Year Project under supervision of Director, Antrix ISRO Head Quarters Shri. Parthasarathy.
+
+\vspace{0.2cm}
+\textbf{Technologies --} Core Java, Firewall, Spring, Eclipse IDE.
+% \clearpage
+
+
+% \cvsection[page2sidebar]
+% 
+% \nocite{*}
+% 
+% \printbibliography[heading=pubtype,title={\printinfo{\faBook}{Books}},type=book]
+% 
+% \divider
+% 
+% \printbibliography[heading=pubtype,title={\printinfo{\faFileTextO}{Journal Articles}}, type=article]
+% 
+% \divider
+% 
+% \printbibliography[heading=pubtype,title={\printinfo{\faGroup}{Conference Proceedings}},type=inproceedings]
+% 
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+ 
+\cvsection{Day in Office}
+
+% % Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% % \wheelchart{outer radius}{inner radius}{
+% % comma-separated list of value/text width/color/detail}
+% % Some ad-hoc tweaking to adjust the labels so that they don't overlap
+% \begin{cent
+     \wheelchart{2cm}{0cm}{%
+  20/7em/accent!80/\footnotesize\\[1ex]Administrative\\\\ activities,10/7em/accent!5/\footnotesize\\[1ex]Refreshment,5/7em/accent!60/\footnotesize\\[1ex]Production Support,10/7em/accent!20/\footnotesize\\[1ex]Issue fixing,50/7em/accent/\footnotesize\\[1ex]Work on \\\\ Enhancements,15/7em/accent!20/\footnotesize\\[1ex]Learn New thing \\\\ of the day,5/7em/accent!05/\footnotesize\\[1ex]Fill Time sheet
+}
+
+\cvsection{Education}
+
+\cvevent{Bachelor of Engineering \ in IIST}{Avionics - Computer Science}{}{Kerala, India}{Indian Institute of Space Science and Technology is the only Space Institute in Asian Continent. In span of 4-years, got expertise in many departments which includes both Electronics \& computer Science with full-time scholarship provided by ISRO}
+
+
+
+% \divider
+
+\end{document}
